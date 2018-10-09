@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>
     web_dev_lab-4_part-1
   </title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <meta charset="utf-8" />
   <style>
     html,
@@ -13,42 +14,67 @@
       padding: 0px;
     }
 
-    .container {
+    .titletext {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 100px;
+    }
+
+    .inner-multi-column {
       text-align: justify;
-      column-count: 3;
-      -moz-column-count: 3;
-      -webkit-column-count: 3;
+      column-count: 2;
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
       column-gap: 2em;
       -moz-column-gap: 5em;
-      column-rule: 4px outset #ff00ff;
+      column-rule: 4px outset white;
       -moz-column-rule: 2px dotted #aabbde;
       padding: 1em;
+    }
+
+    #content1 {
+      text-align: justify;
+      width: 66%;
+      display: inline-block;
+    }
+
+    #content2 {
+      text-align: justify;
+      width: 33%;
+      display: inline-block;
     }
 
   </style>
 </head>
 
 <body>
-  <div id="content" class='container'>
+  <div id="content1">
     <p class='titletext'>Old English Literature</p>
-    <p>
-      The English language has developed over the course of more than 1,400 years.[1] The earliest forms of English, a set of Anglo-Frisian dialects brought to Great Britain by Anglo-Saxon settlers in the fifth century, are called Old English. Middle English began in the late 11th century with the Norman conquest of England.[2] Early Modern English began in the late 15th century with the introduction of the printing press to London and the King James Bible as well as the Great Vowel Shift.[3] Through the influence of the British Empire, the English language has spread around the world since the 17th century.
-    </p>
-    <p>
-      Old English literature, or Anglo-Saxon literature, encompasses the surviving literature written in Old English in Anglo-Saxon England, in the period after the settlement of the Saxons and other Germanic tribes in England (Jutes and the Angles) c. 450, after the withdrawal of the Romans, and "ending soon after the Norman Conquest" in 1066.[4] These works include genres such as epic poetry, hagiography, sermons, Bible translations, legal works, chronicles and riddles.[5] In all there are about 400 surviving manuscripts from the period.</p>
-    <p>
-      Oral tradition was very strong in early English culture and most literary works were written to be performed.[9][10] Epic poems were very popular, and some, including Beowulf, have survived to the present day. Beowulf is the most famous work in Old English, and has achieved national epic status in England, despite being set in Scandinavia. The only surviving manuscript is the Nowell Codex, the precise date of which is debated, but most estimates place it close to the year 1000. Beowulf is the conventional title,[11] and its composition is dated between the 8th[12][13] and the early 11th century.[14][pages needed]
-      Nearly all Anglo-Saxon authors are anonymous: twelve are known by name from medieval sources, but only four of those are known by their vernacular works with any certainty: Cædmon, Bede, Alfred the Great, and Cynewulf. Cædmon is the earliest English poet whose name is known,[15][pages needed] and his only known surviving work Cædmon's Hymn probably dates from the late 7th century. The poem is one of the earliest attested examples of Old English and is, with the runic Ruthwell Cross and Franks Casket inscriptions, one of three candidates for the earliest attested example of Old English poetry. It is also one of the earliest recorded examples of sustained poetry in a Germanic language. The poem, The Dream of the Rood, was inscribed upon the Ruthwell Cross.[15][pages needed]
-    </p>
-    <p>
-      Two Old English poems from the late 10th century are The Wanderer and The Seafarer. [16] Both have a religious theme, and Richard Marsden describes The Seafarer as "an exhortatory and didactic poem, in which the miseries of winter seafaring are used as a metaphor for the challenge faced by the committed Christian […]".[17]
-      Classical antiquity was not forgotten in Anglo-Saxon England, and several Old English poems are adaptations of late classical philosophical texts. The longest is King Alfred's (849–99) 9th-century translation of Boethius' Consolation of Philosophy.[18]
-    </p>
+    <div class="inner-multi-column">
+      <p>
+        The English language has developed over the course of more than 1,400 years.[1] The earliest forms of English, a set of Anglo-Frisian dialects brought to Great Britain by Anglo-Saxon settlers in the fifth century, are called Old English. Middle English began in the late 11th century with the Norman conquest of England.[2] Early Modern English began in the late 15th century with the introduction of the printing press to London and the King James Bible as well as the Great Vowel Shift.[3] Through the influence of the British Empire, the English language has spread around the world since the 17th century.
+      </p>
+      <p>
+        Old English literature, or Anglo-Saxon literature, encompasses the surviving literature written in Old English in Anglo-Saxon England, in the period after the settlement of the Saxons and other Germanic tribes in England (Jutes and the Angles) c. 450, after the withdrawal of the Romans, and "ending soon after the Norman Conquest" in 1066.[4] These works include genres such as epic poetry, hagiography, sermons, Bible translations, legal works, chronicles and riddles.[5] In all there are about 400 surviving manuscripts from the period.</p>
+      <p>
+        Oral tradition was very strong in early English culture and most literary works were written to be performed.[9][10] Epic poems were very popular, and some, including Beowulf, have survived to the present day. Beowulf is the most famous work in Old English, and has achieved national epic status in England, despite being set in Scandinavia. The only surviving manuscript is the Nowell Codex, the precise date of which is debated, but most estimates place it close to the year 1000. Beowulf is the conventional title,[11] and its composition is dated between the 8th[12][13] and the early 11th century.
+      </p>
+      <p>
+        Two Old English poems from the late 10th century are The Wanderer and The Seafarer. [16] Both have a religious theme, and Richard Marsden describes The Seafarer as "an exhortatory and didactic poem, in which the miseries of winter seafaring are used as a metaphor for the challenge faced by the committed Christian […]".[17]
+        Classical antiquity was not forgotten in Anglo-Saxon England, and several Old English poems are adaptations of late classical philosophical texts. The longest is King Alfred's (849–99) 9th-century translation of Boethius' Consolation of Philosophy.[18]
+      </p>
+    </div>
+  </div>
+
+  <div id="content2">
     <p>
       After the Norman conquest of England in 1066, the written form of the Anglo-Saxon language became less common. Under the influence of the new aristocracy, French became the standard language of courts, parliament, and polite society. As the invaders integrated, their language and literature mingled with that of the natives, and the Norman dialects of the ruling classes became Anglo-Norman. From then until the 12th century, Anglo-Saxon underwent a gradual transition into Middle English. Political power was no longer in English hands, so that the West Saxon literary language had no more influence than any other dialect and Middle English literature was written in the many dialects that corresponded to the region, history, culture, and background of individual writers.[19]
     </p>
     <p>
       In this period religious literature continued to enjoy popularity and Hagiographies were written, adapted and translated: for example, The Life of Saint Audrey, Eadmer's (c. 1060 – c. 1126).[20] At the end of the 12th century, Layamon in Brut adapted the Norman-French of Wace to produce the first English-language work to present the legends of King Arthur and the Knights of the Round Table.[21] It was also the first historiography written in English since the Anglo-Saxon Chronicle.
+    </p>
+    <p>
+      Another literary genre, that of Romances, appears in English from the 13th century, with King Horn and Havelock the Dane, based on Anglo-Norman originals such as the Romance of Horn (ca. 1170),[23] but it was in the 14th century that major writers in English first appeared. These were William Langland, Geoffrey Chaucer and the so-called Pearl Poet, whose most famous work is Sir Gawain and the Green Knight.
+      Sir Gawain and the Green Knight is a late 14th-century Middle English alliterative romance. It is one of the better-known Arthurian stories of an established type known as the "beheading game". Developing from Welsh, Irish and English tradition, Sir Gawain highlights the importance of honour and chivalry. Preserved in the same manuscript with Sir Gawayne were three other poems, now generally accepted as the work of the same author, including an intricate elegiac poem, Pearl.[26] The English dialect of these poems from the Midlands is markedly different from that of the London-based Chaucer and, though influenced by French in the scenes at court in Sir Gawain, there are in the poems also many dialect words, often of Scandinavian origin, that belonged to northwest England.[26]
     </p>
   </div>
 </body>
