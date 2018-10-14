@@ -1,0 +1,49 @@
+2238  ls
+ 2239  cd var/
+ 2240  cd log/
+ 2241  cd ~/Desktop/
+ 2242  cd SystemAdminTest_2/
+ 2243  ls -lah /var/log/system.log
+ 2244  cat  /var/log/system.log
+ 2245  cat  /var/log/system.log | grep 'fail'
+ 2246  cat  /var/log/system.log | grep -i 'fail'
+ 2247  cat  /var/log/system.log | grep -i -E '(fail|error)'
+ 2248  cat  /var/log/system.log | grep -i -E '(fail|error|exception)'
+ 2249  cat  /var/log/system.log | grep -i -E '(fail|error|exception)' | grep -i -E ''
+ 2250  cat  /var/log/system.log | grep -i -E '(fail|error|exception)' | grep -i -E '(assetion|database|spindump)'
+ 2251  cat  /var/log/system.log | grep -i -E '(fail|error|exception)' | grep -i -v -E '(assetion|database|spindump)' | grep -i 'googlesoftwareupdateagent' >> .
+ 2252  cat  /var/log/system.log | grep -i -E '(fail|error|exception)' | grep -i -v -E '(assetion|database|spindump)' | grep -i 'googlesoftwareupdateagent' >> syslog-google-update-errors.log
+ 2253  kls -lah
+ 2254  cat syslog-google-update-errors.log
+ 2255  ls -lah /var/log/
+ 2256  /var/log/wifi.log | grep -i -E '(fail|exception|error)' | grep -i -v -E 'reset' >> practice-wifi-errors.log
+ 2257  cat /var/log/wifi.log | grep -i -E '(fail|exception|error)' | grep -i -v -E 'reset >> practice-wifi-errors.log
+ 2258  cat /var/log/wifi.log | grep -i -E '(fail|exception|error)' | grep -i -v -E 'reset' >> practice-wifi-errors.log
+ 2259  cat /var/log/wifi.log | grep -i -E '(fail|exception|error)' | grep -i -v -E 'deleted' >> install-errors.log
+ 2260  cat syslog-google-update-errors.log | head -n 15 | tail -n 10 | echo "==========================" >> error-samples.log
+ 2261  cat syslog-google-update-errors.log | head -n 15 | tail -n 10  >> error-samples.log
+ 2262  echo "========================================================================" error-samples.log
+ 2263  echo "========================================================================" >> error-samples.log
+ 2264  cat wifi-errors.log | head -n 15 | tail -n 10  >> error-samples.log
+ 2265  ls
+ 2266  cat practice-wifi-errors.log | head -n 15 | tail -n 10  >> error-samples.log
+ 2267  echo "============================================================================" >> error-samples.log
+ 2268  cat install-errors.log | head -n 15 | tail -n 10  >> error-samples.log
+ 2269  echo "===========================================================================" >> error-samples.log
+ 2270  cat error-samples.log
+ 2271  mv ~/Desktop/SystemAdminTest_2/error-samples.log  ~/upasana/bcit-d3-courses/practice/SystemAdmin/test_2
+ 2272  mv ~/Desktop/SystemAdminTest_2/error-samples.log  ~/upasana/bcit-d3-courses/practice/SystemAdmin
+ 2273  mv ~/Desktop/SystemAdminTest_2/error-samples.log  ~/upasana/bcit-d3-courses/practice
+ 2274  cd ~/upasana/bcit-d3-courses/
+ 2275  cd practice/
+ 2276  cd Syste
+ 2277  cd SystemAdmin/
+ 2278  ls -lah
+ 2279  ls -lah test_2
+ 2280  cat test_2
+ 2281  git add test_2
+ 2282  git commit -m "added test_2 file"
+ 2283  git push origin master
+ 2284  git status
+ 2285  zip system-errors.zip ~/Desktop/SystemAdminTest_2/
+ 2286  history
