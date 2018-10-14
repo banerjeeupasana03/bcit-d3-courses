@@ -1,0 +1,30 @@
+ 1932  git branch -l
+ 1933  git branch -D add-index-css
+ 1934  git branch -D add-index-html
+ 1935  git branch -D add-index-js
+ 1936  git branch -D add-index-php
+ 1937  git push origin :add-index-html
+ 1938  git push origin :add-index-css
+ 1939  git push origin :add-index-php
+ 1940  git push origin :add-index-js
+ 1941  mkdir -p ~/upasana/bcit-d3-courses/COMP_1170/examples
+ 1942  cd  ~/upasana/bcit-d3-courses/COMP_1170/examples
+ 1943  mkdir -p test_1
+ 1944  cp -r ~/Desktop/upasana_example_project/index.* ~/upasana/bcit-d3-courses/COMP_1170/examples/test_1/
+ 1945  git commit -m "added all index files"
+ 1946  touch git-history.txt
+ 1947  git log
+ 1948  nano git-history.txt 
+ 1949  cat git-history.txt 
+ 1950  git commit -m "added git log"
+ 1951  mv ~/Desktop/upasana_example_project/git-history.txt ~/upasana/bcit-d3-courses/COMP_1170/examples/test_1/
+ 1952  git commit -m "moved git log"
+ 1953  cd ~/upasana/bcit-d3-courses/COMP_1170/examples/test_1/
+ 1954  git status
+ 1955  git add .
+ 1956  git commit -m "added new files"
+ 1957  git push origin master
+ 1958  cd ~/Desktop/upasana_example_project/
+ 1959  history 
+ 1960  touch cli-history.txt
+ 1961  history | tail -n 30 >> cli-history.txt 
