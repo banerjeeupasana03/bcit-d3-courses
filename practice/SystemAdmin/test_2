@@ -1,0 +1,34 @@
+==========================
+Oct 13 10:33:13 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:13.488 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneThread) updateProductWithProductID:usingEngine:error:] Done checking for updates for '"com.google.Keystone"' using engine <KSDaemonUpdateEngine:0x7fc99de12a50
+Oct 13 10:33:13 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:13.490 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneThread) performSelfUpdateWithEngine:error:] Finished self update check.
+Oct 13 10:33:13 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:13.495 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneThread) updateProductWithProductID:usingEngine:error:] Checking for updates for "All Products" using engine <KSDaemonUpdateEngine:0x7fc99de12a50
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.532 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneDelegate) updateEngineFinishedWithErrors:] Keystone finished: errors=0
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.535 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneThread) updateProductWithProductID:usingEngine:error:] Done checking for updates for '"All Products"' using engine <KSDaemonUpdateEngine:0x7fc99de12a50
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.538 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneThread) updateProductWithProductID:usingEngine:error:] Checking for updates for "All Products" using engine <KSUpdateEngine:0x7fe74bd902d0
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.538 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSUpdateEngine updateAllExceptProduct:withError:] KSUpdateEngine updating all installed products, except:'com.google.Keystone'.
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.538 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneDelegate) updateEngineFinishedWithErrors:] Keystone finished: errors=0
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.539 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSEngineInvocation(KeystoneThread) updateProductWithProductID:usingEngine:error:] Done checking for updates for '"All Products"' using engine <KSUpdateEngine:0x7fe74bd902d0
+Oct 13 10:33:14 developer GoogleSoftwareUpdateAgent[27825]: 2018-10-13 10:33:14.653 GoogleSoftwareUpdateAgent[27825/0x7000092f0000] [lvl=2] -[KSAgentApp(PrivateMethods) uploadStats:forInvocation:error:] Successfully uploaded stats <KSStatsCollection:0x7fe74bc26c60 path="/Users/developer/Library/Google/GoogleSoftwareUpdate/Stats/Keystone.stats", count=5, stats={
+========================================================================
+Fri Oct 12 17:38:46.128 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Fri Oct 12 20:59:05.136 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Fri Oct 12 21:46:01.162 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Fri Oct 12 23:55:30.267 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 07:25:29.443 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 08:32:01.202 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 10:03:06.725 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 10:18:12.038 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 10:28:38.206 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 11:04:34.299 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+============================================================================
+Fri Oct 12 17:38:46.128 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Fri Oct 12 17:38:46.171 <airportd[174]> _handleLinkEvent: Got an error trying to query WiFi for power. Resetting state variables.
+Fri Oct 12 20:59:05.136 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Fri Oct 12 20:59:05.250 <airportd[174]> _handleLinkEvent: Got an error trying to query WiFi for power. Resetting state variables.
+Fri Oct 12 21:46:01.162 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Fri Oct 12 23:55:30.267 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 07:25:29.443 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 08:32:01.202 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 10:03:06.725 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+Sat Oct 13 10:18:12.038 <kernel> AirPort_BrcmNIC::getSSIDData(): Get failure: APPLE80211_IOC_SSID: 82
+===========================================================================
