@@ -1,0 +1,48 @@
+commit d91fa736cbe39973c993c4eb74a07b232620fd59 (HEAD -> master, origin/master)
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 17:22:30 2018 -0700
+
+    added screenshots
+
+commit 6a05291c51d6578f1d9ec5ab60af0a79ee82d10e (tag: v0.0.4)
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 16:08:47 2018 -0700
+
+    added data in index.php file
+
+commit 35c1c79d0a0e271f4eaa628035e46246fbc48703
+Merge: 52dde77 f120c7d
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 16:58:07 2018 -0700
+
+    Merge pull request #3 from banerjeeupasana03/add-index-html
+
+    Add index html
+
+commit f120c7df6f4d9c1d6ab580f5b83e4eefcca0dece
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 16:57:08 2018 -0700
+
+    added a few last lines in the file
+
+commit 52dde7769f73f4f5b6efc0b57eb2e4bc13548762 (tag: v0.0.3, tag: v0.0.2)
+Merge: adfd8e0 e4cba22
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 16:50:52 2018 -0700
+
+    Merge pull request #2 from banerjeeupasana03/add-index-css
+
+    Add index css
+
+commit adfd8e029a62762541f8879939769ec8851da925 (tag: v0.0.1)
+Merge: 6e40649 9875adc
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 16:43:52 2018 -0700
+
+    Merge pull request #1 from banerjeeupasana03/add-index-js
+
+    Add index js
+
+commit e4cba22b022fde269e75881debf6bdab5eacecfd
+Author: Upasana Mukherjee <banerjeeupasana03@gmail.com>
+Date:   Sat Oct 13 16:35:12 2018 -0700
