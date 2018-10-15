@@ -1,0 +1,100 @@
+  334  curl  https://download.bls.gov/pub/time.series/ln/ln.occupation >> occupation.temp.txt
+  335  cat occupation.temp.txt | grep -E "(computer|engineer|science|network)" >> occupation.txt
+  336  cat occupation.txt
+  337  curl https://download.bls.gov/pub/time.series/ln/ln.education >> education.txt
+  338  curl https://download.bls.gov/pub/time.series/pr/pr.contacts >> contacts.temp.txt
+  339  cat contacts.temp.txt 
+  340  cat contacts.temp.txt | grep "bls.org" >> contacts.txt
+  341* 
+  342  cat contacts.txt
+  343  cat contacts.temp.txt | grep 'bls.org' >> contacts.txt
+  344  cat contacts.txt
+  345  cat contacts.temp.txt | grep 'bls.gov' >> contacts.txt
+  346  cat contacts.txt
+  347  curl https://download.bls.gov/pub/time.series/ip/ip.industry >> industry.temp.txt
+  348  cat industry.temp.txt | grep -E '(computer|research|engineer|technology|information)' >> industry.txt
+  349  cat industry.txt
+  350  mkdir -p ~/Desktop/SystemAdminTest_3_backup
+  351  pwd
+  352  mv *.temp.* ~/Desktop/SystemAdminTest_3_backup/
+  353  cat ~/Desktop/SystemAdminTest_3_backup/
+  354  pwd
+  355  mv ~/Desktop/SystemAdminTest_3_backup/*.temp.* ~/Desktop/SystemAdminTest_3_backup/*.temp.bak
+  356  cp ~/Desktop/SystemAdminTest_3_backup/*.temp.* ~/Desktop/SystemAdminTest_3_backup/*.temp.bak
+  357  mv ~/Desktop/SystemAdminTest_3_backup/*.temp.txt ~/Desktop/SystemAdminTest_3_backup/*.temp.bak
+  358  mv ~/Desktop/SystemAdminTest_3_backup/contacts.temp.txt ~/Desktop/SystemAdminTest_3_backup/contacts.temp.bak
+  359  mv ~/Desktop/SystemAdminTest_3_backup/industry.temp.txt ~/Desktop/SystemAdminTest_3_backup/industry.temp.bak
+  360  mv ~/Desktop/SystemAdminTest_3_backup/occupation.temp.txt ~/Desktop/SystemAdminTest_3_backup/occupation.temp.bak
+  361  ls -lah
+  362  touch dataset.txt
+  363  cat contacts.txt >> dataset.txt 
+  364  echo "================================================================" >> dataset.txt 
+  365  cat education.txt >> dataset.txt 
+  366  echo "================================================================" >> dataset.txt 
+  367  cat industry.txt >> dataset.txt 
+  368  echo "================================================================" >> dataset.txt 
+  369  cat occupation.txt >> dataset.txt 
+  370  echo "================================================================" >> dataset.txt 
+  371  cat dataset.txt 
+  372  pwd
+  373  rm -rf *.txt
+  374  ls -lah
+  375  touch dataset
+  376  nano dataset 
+  377  ls -lah
+  378  cd ~/bcit-d3-courses/
+  379  git status
+  380  git checkout -b practice-test-3-results
+  381  git checkout master
+  382  git checkout -b practice-test-3-commands
+  383  git checkout practice-test-3-results
+  384  mv ~/SystemAdminTest_3/dataset ~/bcit-d3-courses/practice/SystemAdmin/test_3
+  385  pwd
+  386  mv ~/Desktop/SystemAdminTest_3.pdf ~/bcit-d3-courses/practice/SystemAdmin/test_3
+  387  git status
+  388  git add .
+  389  git status
+  390  git commit -m "added new file in test_3"
+  391  git config --global user.email "banerjeeupasana03@gmail.com"
+  392  git status
+  393  git push origin practice-test-3-results
+  394  git push origin practice-test-3-results
+  395  git push origin practice-test-3-results
+  396  git push origin practice-test-3-results
+  397  vim ~/.gitconfig 
+  398  git push origin practice-test-3-results
+  399  git remote -v
+  400  git status
+  401  git log
+  402  git status
+  403  git check master
+  404  git checkout master
+  405  git log
+  406  git branch -l
+  407  git checkout practice-test-3-results
+  408  git status
+  409  git status
+  410  git add practice/SystemAdmin/test_3 
+  411  git status
+  412  git commit -m "added new file in test_3
+  413  git commit -m "added new file in test_3"
+  414  git status
+  415  git push origin practice-test-3-results
+  416  git push origin practice-test-3-results
+  417  git pull origin practice-test-3-results
+  418  git pull origin master
+  419  git status
+  420  git tag practice-3-v1
+  421  git status
+  422  git push origin practice-3-v1
+  423  git status
+  424  git checkout master
+  425  git pull origin master
+  426  git status
+  427  git tag -d practice-3-v1
+  428  git push origin :practice-3-v1
+  429  git checkout -l
+  430  git branch -l
+  431  git checkout practice-test-3-commands
+  432  cat history | tail -n 100 >> commands.txt
+  433  history | tail -n 100 >> commands.txt
