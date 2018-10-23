@@ -10,7 +10,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Pacifico');
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
-
+    @import url('https://fonts.googleapis.com/css?family=Courgette');
 
     .heading {
       font-family: 'Dancing Script', cursive;
@@ -22,22 +22,99 @@
       color: aliceblue;
     }
 
-    body {
-      background-image: url(alice_wonderland_background.jpg)
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: repeating-linear-gradient(azure, white 10%, grey 20%);
+
+    }
+
+    .background-image {}
+
+    .background-image:before {
+      content: "";
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-image: url('background_movie.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(2px);
+      /* Safari 6.0 - 9.0 */
+      filter: blur(2px);
+      color: chartreuse;
+
+    }
+
+    .detail {
+      color: aliceblue;
+      font-family: 'Courgette', cursive;
+      font-size: 15;
+    }
+
+    .list {
+      color: aliceblue;
+      font-family: 'Courgette', cursive;
+      font-size: 15;
+      list-style-image: url('bullet.png');
+
+    }
+
+    .detail-2 {
+      color: aliceblue;
+      font-family: 'Courgette', cursive;
+      font-size: 15;
+      list-style-image: url('bullet.png');
     }
 
   </style>
 </head>
 
-<body>
-  <div class="paragraph1">
-    <header>
-      <h2 class="heading">Alice In The Wonderland</h2>
-    </header>
+<body class="background-image">
+  <header>
+    <h2 class="heading">Alice In The Wonderland</h2>
+  </header>
+  <div class="detail">
     <p>
-      “Who in the world am I? Ah, that's the great puzzle.”
+      Alice in The Wonderland by Lewis Carroll is one of my go-to books whenever I crave for a good read. I also enjoy watching the movie very much. It just caters to my imagination that runs wild through the pages of the book.
+    </p>
+    <p>
+      Here are some of the quotes that I love from the book and the movie enlisted below. They really make you wonder and transport you in the dimension of our inner child, that wants to get lost in the world of dreams and reality, coz that's where magic happens!!!
     </p>
   </div>
+  <div class="list">
+    <ul class="unordered-list1">
+      <li> Chesire cat : I'm not crazy, my reality is just different than yours.</li>
+      <li> The Mad Hatter: Have I gone mad?<br />
+        Alice: I'm afraid so. You're entirely bonkers. But I'll tell you a secret. All the best people are.</li>
+      <li> “Begin at the beginning," the King said, very gravely, "and go on till you come to the end: then stop.” </li>
+      <li> “Who in the world am I? Ah, that's the great puzzle.” </li>
+      <li> “Alice:How long is forever? White Rabbit:Sometimes, just one second.” </li>
+      <li> “If you don't know where you are going any road can take you there”</li>
+    </ul>
+  </div>
+  <div class="detail-2">
+    <h2> And yet some more... </h2>
+    <ul class="unordered-list2">
+      <li> In a Wonderland they lie<br />
+        Dreaming as the days go by,<br />
+        Dreaming as the summer die.”<br /> </li>
+      <li> It would be so nice if something made sense for a change.” </li>
+      <li> “What a strange world we live in...Said Alice to the Queen of hearts” </li>
+      <li> “The more there is of mine, the less there is of yours”</li>
+    </ul>
+
+  </div>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
