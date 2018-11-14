@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>lab_6_html</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+    body {
+      padding: 0px;
+      margin: 0px;
+      background-color: azure;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .margin-top-20px {
+      margin-top: 20px;
+    }
+
+    .margin-20px {
+      margin: 20px;
+    }
+
+    .empty-container {
+      margin-left: 23%;
+      display: inline-block;
+      content: '';
+    }
+
+    #main {
+      background-color: aquamarine;
+      padding: 0%;
+      height: 100%;
+      overflow: auto;
+      margin: auto;
+      border: 2px solid black;
+    }
+
+    .logo {
+      background-color: cadetblue;
+      width: 48%;
+      height: 100px;
+      display: inline-block;
+    }
+
+    .title {
+      background-color: cornflowerblue;
+      width: 48%;
+      height: 100px;
+      color: gray;
+
+      display: inline-block;
+
+    }
+
+    header {
+      background-color: blueviolet;
+    }
+
+    .icon {
+      width: 100px;
+      margin-top: -1px;
+    }
+
+    .logo-name {
+      width: 200px;
+      position: absolute;
+      margin-top: 30px;
+    }
+
+    .home {
+      font-weight: bold;
+      margin-top: 35px;
+      margin-left: 30%;
+    }
+
+    .about {
+      margin-left: 15px;
+      font-weight: bold;
+      margin-top: 35px;
+    }
+
+    .contact {
+      margin-left: 15px;
+      font-weight: bold;
+      margin-top: 35px;
+    }
+
+    .gallery {
+
+      margin-left: 15px;
+      font-weight: bold;
+      margin-top: 35px;
+    }
+
+    #heading {
+      background-color: burlywood;
+      margin-top: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bigheading {
+      text-align: center;
+      font-size: 15pt;
+    }
+
+    .smallheading {
+      text-align: center;
+    }
+
+    #circles {
+      background-color: blue;
+      overflow: auto;
+    }
+
+    .circle {
+      width: 130px;
+      margin: 2%;
+    }
+
+    #squarepics {
+      background-color: aqua;
+      width: 70%;
+      height: 40%;
+      overflow: auto;
+      display: inline-block;
+    }
+
+    .square-img {
+      width: 45%;
+      height: auto;
+    }
+
+
+    #sidepanel {
+      overflow: auto;
+      background-color: darkmagenta;
+      width: 30%;
+      height: 40%;
+
+    }
+
+    .side {
+      margin-bottom: 10%;
+    }
+
+    .side img {
+      width: 43%;
+      height: 100%;
+    }
+
+    .side .text {
+      display: inline-block;
+    }
+
+    .side .text .middle {
+      display: table-cell;
+      text-align: center;
+      padding-top: 30%;
+      padding-bottom: 30%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="main">
+
+    <header>
+      <div class="logo left">
+        <img src="logos/logo.png" class="icon left" alt="logo" />
+        <img src="logos/logo23.png" class="logo-name right" alt="logohead" />
+      </div>
+      <div class="title right">
+        <p class="home left">Home</p>
+        <p class="about left">About</p>
+        <p class="contact left">Contact</p>
+        <p class="gallery left">Gallery</p>
+      </div>
+    </header>
+  </div>
+
+  <section id="heading">
+    <div class="bigheading">
+      <h1>VISUAL DESIGN AND WEB DEVELOPMENT</h1>
+    </div>
+    <div class="smallheading">
+      <h3>FROM PARK CITY, UTAH</h3>
+    </div>
+  </section>
+
+  <div id="circles">
+    <span class="empty-container"></span>
+    <img src="circle1.png" class="circle" alt="design" />
+    <img src="circle2.png" class="circle" alt="design" />
+    <img src="circle3.png" class="circle" alt="design" />
+    <img src="circle4.png" class="circle" alt="design" />
+    <span class="empty-container"></span>
+  </div>
+
+  <div id="squarepics" class="margin-top-20px">
+    <div class="pic1">
+      <img src="img1.png" alt="imagehere" class="margin-20px square-img left" />
+    </div>
+    <div class="pic2">
+      <img src="img2.png" alt="imagehere" class="margin-20px square-img right" />
+    </div>
+    <div class="pic3">
+      <img src="img3.png" alt="imagehere" class="margin-20px square-img left" />
+    </div>
+    <div class="pic4">
+      <img src="img4.png" alt="imagehere" class="margin-20px square-img right" />
+    </div>
+  </div>
+
+  <aside id="sidepanel" class="right margin-top-20px">
+    <div class="side margin-20px">
+      <img src="astronomy-cosmos-dark-733475.jpg" alt="images" />
+      <div class="text"><span class="middle">Graphic design elements</span></div>
+    </div>
+    <div class="side margin-20px">
+      <img src="pexels-photo-1168940.jpeg" alt="images" />
+      <div class="text"><span class="middle">Graphic design elements</span></div>
+    </div>
+    <div class="side margin-20px">
+      <img src="background-boardwalk-bridge-1028203.jpg" alt="images" />
+      <div class="text"><span class="middle">Graphic design elements</span></div>
+    </div>
+    <div class="side margin-20px">
+      <p>
+        Web design is the process of creating websites. It encompasses several different aspects, including webpage layout, content production, and graphic design. While the terms web design and web development are often used interchangeably
+      </p>
+    </div>
+  </aside>
+
+
+</body>
+
+</html>
