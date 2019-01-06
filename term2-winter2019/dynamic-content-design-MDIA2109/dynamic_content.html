@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Review
+  </title>
+  <style>
+    .boxes {
+      background-color: #BED;
+      height: 100px;
+      width: 100px;
+      margin-bottom: 10px;
+      /*      display: inline-block;*/
+    }
+
+    #box1 {
+      position: static;
+    }
+
+    #box2 {
+      position: relative;
+      /*
+      left: 10px;
+      top: 10px;
+*/
+      right: 10px;
+      bottom: 10px;
+      height: 1000px;
+    }
+
+    #box3 {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    #box5 {
+      position: absolute;
+      background-color: #DAD;
+      left: 0px;
+      bottom: 0px;
+      width: 25px;
+      height: 25px;
+    }
+
+    #box4 {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    /*    fixed means that it will be on the viewport, which is the front side. It is fixed on the wnidow and does not scroll with the page*/
+    /*    for box 5 it only applies if your items are not in the static position. Placed . absolutely in a relative div. The parent should be non-static. It can be absolute or relative format. Use fixed only if you want to keep it there forever.*/
+
+    /*    absolute means that its position is not relative to anything. It is going to go as it is asked to.*/
+
+    /*    relative means you can actually move that item relative to its static position*/
+
+    /*    everything by default is static. Everything goes from left to rt and top t obottom by default. Static means this. If it is block display then it is block on top of each other. Inline block imposes our condition on the static position. For html however span and div is same on the perspective of data. Static means however that you cannot change the position */
+
+  </style>
+</head>
+
+<body>
+  <div id="box1" class="boxes">
+    <!--#id should be unique. cmd+d duplicates the previous line-->
+  </div>
+  <div id="box2" class="boxes">
+    <!--#id should be unique. cmd+d duplicates the previous line-->
+  </div>
+  <div id="box3" class="boxes">
+    <!--#id should be unique. cmd+d duplicates the previous line-->
+  </div>
+  <div id="box5" class="boxes">
+    <button>But1</button>
+    <button>But2</button>
+  </div>
+  <div id="box4" class="boxes">
+    <!--#id should be unique. cmd+d duplicates the previous line-->
+  </div>
+</body>
+
+</html>

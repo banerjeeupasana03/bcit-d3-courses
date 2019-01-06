@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FLEX</title>
+  <style>
+    #flexCont {
+      /*      FLEX START*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /*      justify means every-single child will be at the center of this div, no matter what the size to the div is. YOu can shrink your browser and expand it flexbox will adjust accordingly. It does not matter what u add inside*/
+      /*      all the childs will be aligned center*/
+      /*      FLEX END*/
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100vw;
+      height: 100vh;
+      background-color: #CAB;
+    }
+
+    .flexRow {
+      display: flex;
+      /*      width: 100%;*/
+      width: 70%;
+    }
+
+    .flex1 {
+      flex: 1;
+      background-color: #BED;
+    }
+
+    .flex2 {
+      flex: 4;
+      background-color: #BAD;
+    }
+
+    #box1 {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: 100px;
+      background-color: #FAD;
+      border-radius: 100px;
+      transition: width 1s, height 1s, background-color 1s;
+      /*
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      border-radius: 100px; for this it wont matter as per the flex boxes since the position is fixed.
+*/
+    }
+
+    /*    it means flex 2 is double the size of flex1. It will adjust likewise with the screen coordination. If it is flex 4 then it is 4 times bigger than flex 1* shift+tab indents by default positions beside each other is called row. To place on top of each other we use flex column. Flex is therefore a bootstrap tool [https://getbootstrap.com/] All mobile apps use this flex display so that everything looks neatly aligned./
+
+  </style>
+</head>
+
+<body>
+  <div id="flexCont">
+    <div class="flexRow">
+      <div class="flex1">Flex1</div>
+      <div class="flex1">Flex1</div>
+      <div class="flex2">Flex2</div>
+      <div class="flex1">Flex1</div>
+    </div>
+    <div class="flexRow">
+      <div class="flex1">Flex1</div>
+      <div class="flex2">Flex1</div>
+      <div class="flex2">Flex2</div>
+      <div class="flex1">Flex1</div>
+    </div>
+
+  </div>
+  <div id="box1">
+  </div>
+  <script>
+    //   It overwrites the previous data of the object by the newer data. Hardware sends messages everytime it interacts with computer. Evrytime you operate with the mouse it tells "click" to your computer
+    //    older format
+    //    document.getElementById("box1").style.width = "330px";
+    //    new format(goes by css format that is familiar)
+    // document.querySelector("#box1").style.backgroundColor = "red";
+    document.querySelector("#box1").addEventListener("click", function() {
+      document.getElementById("box1").style.width = "330px";
+      document.querySelector("#box1").style.backgroundColor = "red";
+      //     make more changes to different/same objects in the document
+    });
+    document.querySelector("#flexCont").addEventListener("click", function() {
+      document.querySelector("#box1").style.backgroundColor = "#FAD";
+      document.querySelector("#box1").style.width = "100px";
+    });
+    //    make other objects click and change other objects in the document
+    //    document.querySelector(".flexRow").addEventListener("click", function() {
+    // document.querySelector(".flexRow").style.width = "330px";
+    // document.querySelector(".flexRow").style.height = "400px";
+    // document.querySelector(".flexRow").style.backgroundColor = "blue";
+    // });
+
+  </script>
+</body>
+
+</html>
+<!--Points to remember:
+1. Indent properly
+2. Recognize the objects on the screen. We always built objects with certain data. It has characters and digits. If these data changes at any point, just by changing a number alters the result. Anything you can highlight is an object on the screen. So html, style, body everything is an object. Anything which is an object, you can alter the data by altering the data and characters associated with it. That's how dynamic content works, when you make new data on screen--cmd+shift+z is redo>
