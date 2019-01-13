@@ -1,0 +1,13 @@
+#app {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+}
+
+#app > div {
+  height: 100px;
+  width: 100px;
+  background-color: dodgerblue;
+  position: relative;
+}
