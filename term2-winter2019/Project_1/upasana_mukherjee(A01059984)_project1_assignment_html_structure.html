@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Project 1 Assignment
+		</title>
+		<style type="text/css">
+			body {
+				background-color: #ADD;
+				height: 100%;
+				width: 100%;
+				
+			}
+
+			header {
+				background-color: #DAD;
+				height: auto;
+				width: 100%;
+				position: relative;
+				display: block;
+				border: 2px solid black;	
+			}
+
+			nav {
+				background-color: #CDD;
+				height: 40px;
+				width: 100%;
+				display: inline block;
+				position: relative;
+				border: 2px solid black;
+				margin-bottom: 10px;
+				text-align: center;
+				font-weight: bold;
+			}
+
+			header>div>p {
+				text-align: center;
+			}
+
+			header>h2 {
+				text-align: center;
+			}
+
+
+			.left {
+				background-color: #DCB;
+				float: left;
+				height: 100%;
+				width: 65%;
+				/*position: relative;*/
+				margin-top: 20px;
+				border: 1px solid black;
+				display: inline-block;
+				/*padding-bottom: 4%;*/
+			}
+			.right {
+				background-color: #DCB;
+				float: right;
+				height: 100%;
+				width: 30%;
+				/*position: relative;*/
+				margin-top: 20px;
+				border: 1px solid black;
+				margin-bottom: 4%;
+				display: inline-block;
+
+				/*margin-bottom: 10px;*/
+			}
+
+			.left>article {
+				/*position: relative;*/
+				display: inline-block;
+				background-color: black;
+				height: 100%;
+				width: 95%;
+				margin-top: 0px;
+				margin-bottom: 20px;
+				margin: 20px;
+				padding-bottom: 35px;
+			}
+
+			.headerleft {
+				background-color: red;
+				height: 10%;
+				width: 88%;
+				display: inline-block;
+				padding: 30px;
+				align-items: center;
+				margin: 5px 20px;
+				border: 1px solid black;
+			}
+
+			.sectionleft {
+				background-color: purple;
+				height: 10%;
+				width: 88%;
+				display: inline-block;
+				padding: 30px;
+				align-items: center;
+				margin: 5px 20px;
+				border: 1px solid black;
+
+			}
+			.sectionleft>h6 {
+				text-align: center;
+				color: white
+			}
+			h6 {
+				text-align: center;
+				color: white
+			}
+			.footerleft {
+				background-color: purple;
+				height: 10%;
+				width: 88%;
+				display: inline-block;
+				padding: 30px;
+				align-items: center;
+				margin: 5px 20px;
+				border: 1px solid black;
+			}
+
+			.sectionright1 {
+				position: relative;
+				display: inline-block;	
+				border: 1px solid black;
+				width: 40%;
+				height: 100%;
+				background-color: orange;
+				padding-bottom: 100px;
+				margin-left: 30%;
+
+			}
+			.sectionright2 {
+				position: relative;
+				display: inline-block;
+				border: 1px solid black;
+				width: 40%;
+				height: 100%;
+				background-color: orange;
+				padding-bottom: 100px;
+				margin-top: 20px;
+				margin-left: 30%;
+
+			}
+			.sectionright3 {
+				position: relative;
+				display: inline-block;
+				border: 1px solid black;
+				width: 40%;
+				height: 100%;
+				background-color: orange;
+				padding-bottom: 100px;
+				margin-top: 20px;
+				margin-left: 30%;
+			}
+			.footer {
+				position: relative;
+				left: 0;
+				bottom: 0;
+				width: 90%;
+				background-color: red;
+				color: white;
+				text-align: center;
+				height: 40px;
+				margin-top: 45%;
+				padding: 5%;
+				
+
+			}
+			.topbar {
+				width: 100%;
+				height: auto;
+				position: relative;
+				display: block;
+				background-color: magenta;
+				margin-top: 20px;
+				padding-top: 20px;
+				padding-bottom: 40px;
+			}
+			.block1 {
+				display: inline-block;
+				position: relative;
+				width: 30%;
+				height: auto;
+				background-color: yellow;
+				padding-bottom: 10%;
+				text-align: center;
+				font-weight: bold;
+			}
+			.block2 {
+				display: inline-block;
+				position: relative;
+				width: 23%;
+				height: auto;
+				background-color: yellow;
+				padding-bottom: 10%;
+				padding-left: 10%;
+				margin-left: 40px;
+				font-weight: bold;
+			}
+			.block3 {
+				display: inline-block;
+				position: relative;
+				width: 20%;
+				height: auto;
+				background-color: yellow;
+				padding-bottom: 10%;
+				padding-left: 10%;
+				margin-left: 10px;	
+				float: right;
+				font-weight: bold;	
+			}
+			.foot1 {
+				display: inline-block;
+				position: relative;
+				background-color: teal;
+				width: 20%;
+				height: 20%;
+				padding-bottom: 5%;
+				float: left;
+			}
+			.foot2 {
+				display: inline-block;
+				position: relative;
+				background-color: teal;
+				width: 20%;
+				height: 20%;
+				padding-bottom: 5%;
+				float: left;
+				margin-left: 80px;
+			}
+			.foot3 {
+				display: inline-block;
+				position: relative;
+				background-color: teal;
+				width: 20%;
+				height: 20%;
+				margin-left: 80px;
+				padding-bottom: 5%;
+				float: left;
+			}
+			.foot4 {
+				display: inline-block;
+				position: relative;
+				background-color: teal;
+				width: 20%;
+				height: 20%;
+				padding-bottom: 5%;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>This is a header</h2>
+			<nav>
+				<p>This is the nav bar</p>
+			</nav>
+		</header>
+		<div class="topbar">		
+			<div class="block1">
+				Picture1
+			</div>
+			<div class="block2">
+				Picture2
+			</div>
+			<div class="block3">
+				Picture3
+			</div>
+		</div>
+		<section class="left">
+			<h6>Section</h6>
+			<article>
+				<h6>Article</h6>
+				<!-- <span style="color: white">Article</span> -->
+				<header class="headerleft">
+					<h6>Header</h6>
+					<!-- <span style="color: white">Header</span> -->
+				</header>
+				<section class="sectionleft">
+					<h6>Section</h6>
+					<!-- <span style="color: white">Section</span> -->
+<!-- 				</header> -->
+				</section>
+				<footer class="footerleft">
+					<h6>Footer</h6>
+					<!-- <span style="color: white">Footer</span> -->
+				<!-- </header> -->
+				</footer>
+			</article>
+		</section>
+		<section class="right">
+			<h6>SECTION</h6>
+<!-- 			<span style="color: black">Section</span> -->
+			<section class="sectionright1">
+				<h6>Section</h6>
+<!-- 				<span style="color: white">Section1</span> -->
+			</section>
+			<section class="sectionright2">
+				<h6>Section</h6>
+				<!-- <span style="color: white">Section2</span>	 -->			
+			</section>
+			<section class="sectionright3">
+				<h6>Section</h6>
+<!-- 				<span style="color: white">Section3</span> -->
+			</section>
+			
+		</section>
+		<!-- <h6>heading</h6> -->
+		<footer class="footer">
+			<div class="foot1">
+				Logo
+			</div>
+			<div class="foot2">
+				Informations
+			</div>
+			<div class="foot3">
+				Services
+			</div>
+			<div class="foot4">
+				Contact
+			</div>
+		</footer>
+	</body>
+</html>

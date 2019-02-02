@@ -1,0 +1,15 @@
+.stars {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition:width 1s, height 1s, left 1s, top 1s, transform 1s;
+}
+
+#app {
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
