@@ -1,0 +1,23 @@
+#menu {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 100px;
+  padding: 5px;
+  background-color: #DDA;
+}
+
+#menu button[name="open"] {
+  position: absolute;
+  top: 0px;
+  right: -50px;
+}
+
+#menu button[name="close"] {
+  position: absolute;
+  right: -50px;
+  bottom: 0px;
+}
+.menu_btn {
+  width: 100%;
+}
