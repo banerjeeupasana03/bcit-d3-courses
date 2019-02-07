@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="css/menu.css" type="text/css">
   </head>
   <body>
-    <div id="main">
+    <div id="container">
       <div id="app">
+        <div id="main">
+          <div id="zoom">
+            <div id="zoomcontrols">
+              <button type="button" name="plus">+</button>
+              <button type="button" name="minus">-</button>
+            </div>
+          </div>
+          <div id="controls">
+            <div id="buttons">
+              <button type="button" name="previous">Previous</button>
+              <button onclick="changeImage()" type="button" name="bg1">BG1</button>
+              <button type="button" name="bg2">BG2</button>
+              <button type="button" name="bg3">BG3</button>
+              <button type="button" name="bg4">BG4</button>
+              <button type="button" name="next">NEXT</button>
+            </div>
+            <div id="thumbs">
+              <div id="ch1" class="bgthumbs">
+              </div>
+              <div id="ch2" class="bgthumbs">
+              </div>
+              <div id="ch3" class="bgthumbs">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="menu">
         <button type="button" name="make_bg" class="menu_btn">Make BG</button>
