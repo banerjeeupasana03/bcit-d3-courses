@@ -9,53 +9,34 @@ var zoomDiv = document.getElementById("zoom");
  var bg2Button = document.querySelector("#buttons > button:nth-child(3)");
  var bg3Button = document.querySelector("#buttons > button:nth-child(4)");
  var bg4Button = document.querySelector("#buttons > button:nth-child(5)");
-
-  bg1Button.addEventListener("click", function(){
+ var btnState;
+bg1Button.addEventListener("click", function(){
   bg1.style.backgroundImage = "url(imgs/i1.jpg)";
-});
-
-bg1Button.addEventListener("click", function(){
-bg2.style.backgroundImage = "url(imgs/i2.jpg)";
-});
-
-bg1Button.addEventListener("click", function(){
-bg3.style.backgroundImage = "url(imgs/i3.jpg)";
+  bg2.style.backgroundImage = "url(imgs/i2.jpg)";
+  bg3.style.backgroundImage = "url(imgs/i3.jpg)";
+  btnState = 1;
 });
 
 bg2Button.addEventListener("click", function(){
-bg1.style.backgroundImage = "url(imgs/i4.jpg)";
-});
-
-bg2Button.addEventListener("click", function(){
-bg2.style.backgroundImage = "url(imgs/i5.jpg)";
-});
-
-bg2Button.addEventListener("click", function(){
-bg3.style.backgroundImage = "url(imgs/i6.jpg)";
+  bg1.style.backgroundImage = "url(imgs/i4.jpg)";
+  bg2.style.backgroundImage = "url(imgs/i5.jpg)";
+  bg3.style.backgroundImage = "url(imgs/i6.jpg)";
+  btnState = 2;
 });
 
 bg3Button.addEventListener("click", function(){
-bg1.style.backgroundImage = "url(imgs/i7.jpg)";
+  bg1.style.backgroundImage = "url(imgs/i7.jpg)";
+  bg2.style.backgroundImage = "url(imgs/i8.jpg)";
+  bg3.style.backgroundImage = "url(imgs/i9.jpg)";
+  btnState = 3;
 });
 
-bg3Button.addEventListener("click", function(){
-bg2.style.backgroundImage = "url(imgs/i8.jpg)";
-});
-
-bg3Button.addEventListener("click", function(){
-bg3.style.backgroundImage = "url(imgs/i9.jpg)";
-});
 
 bg4Button.addEventListener("click", function(){
-bg1.style.backgroundImage = "url(imgs/i10.jpg)";
-});
-
-bg4Button.addEventListener("click", function(){
-bg2.style.backgroundImage = "url(imgs/i11.jpg)";
-});
-
-bg4Button.addEventListener("click", function(){
-bg3.style.backgroundImage = "url(imgs/i12.jpg)";
+  bg1.style.backgroundImage = "url(imgs/i10.jpg)";
+  bg2.style.backgroundImage = "url(imgs/i11.jpg)";
+  bg3.style.backgroundImage = "url(imgs/i12.jpg)";
+  btnState = 4;
 });
 
 bg1.addEventListener("mouseenter", function() {
@@ -164,4 +145,36 @@ minusBtn.addEventListener("click", function() {
   var newWidth = Math.round(widthInt - (widthInt * 0.1));
   var newHeight = Math.round(heightInt - (heightInt * 0.07));
   zoomDiv.style.backgroundSize = newWidth + "px" + " " + newHeight + "px";
+});
+
+var nextBtn = document.querySelector("#buttons button[name='next']");
+var prevBtn = document.querySelector("#buttons button[name='previous']");
+var bgBtnArr = [bg1Button, bg2Button, bg3Button, bg4Button];
+
+nextBtn.addEventListener("click", function(){
+  if(btnState == 1){
+    bg2Button.click();
+  } else if(btnState == 2){
+    bg3Button.click();
+  } else if(btnState == 3){
+    bg4Button.click();
+  } else if(btnState == 4){
+    bg1Button.click();
+  }
+});
+
+prevBtn.addEventListener("click", function() {
+  if(btnState == 4){
+    bg3Button.click();
+  }
+  else if(btnState == 3){
+    bg2Button.click();
+  }
+  else if(btnState == 2){
+    bg1Button.click();
+  }
+  else if(btnState == 1){
+    bg4Button.click();
+  }
+
 });
