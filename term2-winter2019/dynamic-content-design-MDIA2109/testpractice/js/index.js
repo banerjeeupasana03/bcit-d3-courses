@@ -124,7 +124,9 @@ plusBtn.addEventListener("click", function() {
   var heightInt = parseInt(heightStr.replace("px", ""));
   var newWidth = Math.round(widthInt + (widthInt * 0.1));
   var newHeight = Math.round(heightInt + (heightInt * 0.07));
-  zoomDiv.style.backgroundSize = newWidth + "px" + " " + newHeight + "px";
+  if (initialHeight < parseInt(initialHeight * 0.64) && initialWidth < parseInt(initialWidth * 0.91)) {
+    zoomDiv.style.backgroundSize = newWidth + "px" + " " + newHeight + "px";
+  }
 });
 
 var minusBtn = document.querySelector("#zoomcontrols button[name='minus']");
@@ -144,7 +146,9 @@ minusBtn.addEventListener("click", function() {
   var heightInt = parseInt(heightStr.replace("px", ""));
   var newWidth = Math.round(widthInt - (widthInt * 0.1));
   var newHeight = Math.round(heightInt - (heightInt * 0.07));
-  zoomDiv.style.backgroundSize = newWidth + "px" + " " + newHeight + "px";
+  if (initialHeight > parseInt(initialHeight * 1.08) && initialWidth > parseInt(initialWidth * 1.11)) {
+    zoomDiv.style.backgroundSize = newWidth + "px" + " " + newHeight + "px";
+  }
 });
 
 var nextBtn = document.querySelector("#buttons button[name='next']");
