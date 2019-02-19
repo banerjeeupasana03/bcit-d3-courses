@@ -1,0 +1,30 @@
+#app {
+  background-color: #000;
+/*
+  background-image: url(skynight.jpg);
+  background-repeat: no-repeat;
+*/
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+}
+
+.snows {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: left 1s, top 5s;
+}
+
+#ground {
+  background-color: #fff;
+  width: 100vw;
+  height: 1px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
