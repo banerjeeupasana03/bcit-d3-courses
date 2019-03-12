@@ -9,6 +9,7 @@ function Carousel() {
     var descriptionDiv = $("#description_container");
     var imgDiv = $("#image_holder");
     var showSpecsBtn = $("#specs_and_price");
+    var specsTextDiv = $("#specs_price_text");
     if(state > 0){
       state = state - 1;
       product = products[state];
@@ -17,6 +18,7 @@ function Carousel() {
       descriptionDiv.html("");
       imgDiv.removeClass("center");
       showSpecsBtn.addClass("hide");
+      specsTextDiv.html("");
     }
   });
   
@@ -27,6 +29,7 @@ function Carousel() {
     var descriptionDiv = $("#description_container");
     var imgDiv = $("#image_holder");
     var showSpecsBtn = $("#specs_and_price");
+    var specsTextDiv = $("#specs_price_text");
     if(state < (products.length - 1)){
       state = state + 1;
       product = products[state];
@@ -35,6 +38,7 @@ function Carousel() {
       descriptionDiv.html("");
       imgDiv.removeClass("center");
       showSpecsBtn.addClass("hide");
+      specsTextDiv.html("");
     }
   });
 }

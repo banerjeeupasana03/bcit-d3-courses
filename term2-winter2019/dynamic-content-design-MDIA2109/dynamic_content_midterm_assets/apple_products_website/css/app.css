@@ -101,6 +101,10 @@ body {
   margin-bottom: 10px;
 }
 
+#specs_price_text {
+  padding-top: 50px;
+}
+
 .center {
   display: flex;
   justify-content: center;
