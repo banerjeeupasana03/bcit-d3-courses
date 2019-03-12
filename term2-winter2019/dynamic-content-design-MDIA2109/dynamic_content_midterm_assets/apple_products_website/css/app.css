@@ -41,6 +41,20 @@ body {
   height: 400px;
 }
 
+#image_holder {
+  width: 50%;
+}
+
+#description {
+  width: 50%;
+  display: flex;
+  /* For flex-direction column align-self adjusts the top-bottom properties like align-items in this case */
+  align-self: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
 .arrow_left {
   width: 50px;
   justify-content: center;
@@ -80,3 +94,10 @@ body {
   width: 150px;
   margin-bottom: 10px;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
