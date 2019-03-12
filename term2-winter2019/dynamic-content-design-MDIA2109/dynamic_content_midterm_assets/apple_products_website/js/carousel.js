@@ -6,8 +6,9 @@ function Carousel() {
     var h3 = $("#display h3");
     var img = $("#display img");
     var product;
-    var descriptionDiv = $("#description");
+    var descriptionDiv = $("#description_container");
     var imgDiv = $("#image_holder");
+    var showSpecsBtn = $("#specs_and_price");
     if(state > 0){
       state = state - 1;
       product = products[state];
@@ -15,6 +16,7 @@ function Carousel() {
       img.attr("src", product.url);
       descriptionDiv.html("");
       imgDiv.removeClass("center");
+      showSpecsBtn.addClass("hide");
     }
   });
   
@@ -22,8 +24,9 @@ function Carousel() {
     var h3 = $("#display h3");
     var img = $("#display img");
     var product;
-    var descriptionDiv = $("#description");
+    var descriptionDiv = $("#description_container");
     var imgDiv = $("#image_holder");
+    var showSpecsBtn = $("#specs_and_price");
     if(state < (products.length - 1)){
       state = state + 1;
       product = products[state];
@@ -31,6 +34,7 @@ function Carousel() {
       img.attr("src", product.url);
       descriptionDiv.html("");
       imgDiv.removeClass("center");
+      showSpecsBtn.addClass("hide");
     }
   });
 }

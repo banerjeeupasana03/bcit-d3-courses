@@ -48,11 +48,13 @@ body {
 #description {
   width: 50%;
   display: flex;
+  flex: 2;
   /* For flex-direction column align-self adjusts the top-bottom properties like align-items in this case */
   align-self: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   padding-top: 50px;
+  padding-right: 10px;
 }
 
 .arrow_left {
@@ -83,13 +85,17 @@ body {
   height: 50px;
 }
 
-#show_more {
+.btn {
   background-color: #121217;
-  border-radius: 6px;
   border: 1px solid white;
+  border-radius: 6px;
   color: white;
   font-size: 12pt;
   font-weight: 500;
+  cursor: pointer;
+}
+
+#show_more {
   height: 50px;
   width: 150px;
   margin-bottom: 10px;
@@ -101,3 +107,14 @@ body {
   align-items: center;
 }
 
+.hide {
+  display: none;
+}
+
+#specs_and_price {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  
+}
