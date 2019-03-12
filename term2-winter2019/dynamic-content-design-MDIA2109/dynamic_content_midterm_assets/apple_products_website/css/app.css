@@ -21,10 +21,19 @@ body {
 #display {
   display: flex;
   flex-direction: column;
+  flex: 3;
   justify-content: center;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
   color: white;
+}
+
+#product_container {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
 }
 
 .image_item {
@@ -60,3 +69,14 @@ body {
   height: 50px;
 }
 
+#show_more {
+  background-color: #121217;
+  border-radius: 6px;
+  border: 1px solid white;
+  color: white;
+  font-size: 12pt;
+  font-weight: 500;
+  height: 50px;
+  width: 150px;
+  margin-bottom: 10px;
+}
