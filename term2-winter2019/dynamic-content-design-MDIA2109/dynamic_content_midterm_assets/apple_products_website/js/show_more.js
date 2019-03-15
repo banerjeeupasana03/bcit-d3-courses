@@ -8,5 +8,6 @@ function ShowMore(){
     descriptionDiv.html(product["description"]);
     imgDiv.addClass("center");
     showSpecsBtn.removeClass("hide");
+    showMoreState = true;
   });
 }

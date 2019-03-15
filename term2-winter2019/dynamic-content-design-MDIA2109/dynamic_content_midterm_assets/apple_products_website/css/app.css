@@ -39,10 +39,15 @@ body {
 .image_item {
   width: 300px;
   height: 400px;
+  transition: 2s;
 }
 
 #image_holder {
   width: 50%;
+}
+
+.zoom {
+  transform: scale(1.5);
 }
 
 #description {
@@ -122,3 +127,17 @@ body {
   margin-top: 50px;
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

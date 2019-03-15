@@ -1,5 +1,6 @@
 // state value is the same product list that will be used in multiple functions
 var state = 0;
+var showMoreState = false;
 var products = [
   {
     name: "Apple Watch",
@@ -40,6 +41,24 @@ var products = [
   {
     name: "Apple Home",
     url: "img/apple_home.svg",
+    description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
+    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  },
+  {
+    name: "Apple Pencil",
+    url: "img/apple_pencil.svg",
+    description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
+    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  },
+  {
+    name: "Mac machine",
+    url: "img/mac_machine.svg",
+    description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
+    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  },
+  {
+    name: "Apple iPad",
+    url: "img/ipad.svg",
     description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
     specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
   }

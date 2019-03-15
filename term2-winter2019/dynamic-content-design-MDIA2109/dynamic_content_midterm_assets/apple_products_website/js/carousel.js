@@ -19,6 +19,7 @@ function Carousel() {
       imgDiv.removeClass("center");
       showSpecsBtn.addClass("hide");
       specsTextDiv.html("");
+      showMoreState = false;
     }
   });
   
@@ -39,6 +40,7 @@ function Carousel() {
       imgDiv.removeClass("center");
       showSpecsBtn.addClass("hide");
       specsTextDiv.html("");
+      showMoreState = false;
     }
   });
 }
