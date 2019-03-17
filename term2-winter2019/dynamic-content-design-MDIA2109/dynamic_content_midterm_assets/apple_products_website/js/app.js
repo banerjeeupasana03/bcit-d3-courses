@@ -3,4 +3,5 @@ $(document).ready(function(){
   ShowMore();
   Accordion();
   Zoom();
+  Changemode();
 })
