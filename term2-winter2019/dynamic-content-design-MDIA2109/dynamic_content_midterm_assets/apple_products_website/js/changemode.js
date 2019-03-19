@@ -1,5 +1,5 @@
 function Changemode(){
-  $("#day_mode_btn").click(function(){
+  document.querySelector("#day_mode_btn").addEventListener("click", function(){
     var nightClass = $(".night");
     var x = 0;
     for(x = 0; x < nightClass.length; x++){
