@@ -14,7 +14,7 @@
 				". lately lately ."
 				". projects projects ."
 				". conclusion conclusion ."
-				". foot foot .";
+				"foot foot foot foot";
 }
 
 .head {
@@ -154,7 +154,33 @@
 .projects {
 	background-color: #D07ADA;
 	grid-area: projects;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "blockone blocktwo blockthree"
+                         "blockfour blockfive blocksix";
+    grid-gap: 5px;
 }
+
+.block1 {
+  grid-area: blockone;
+}
+.block2 {
+  grid-area: blocktwo;
+}
+.block3 {
+  grid-area: blockthree;
+}
+.block4 {
+  grid-area: blockfour;
+}
+.block5 {
+  grid-area: blockfive;
+}
+.block6 {
+  grid-area: blocksix;
+}
+
 
 .conclusion {
 	background-color: #A21054;
@@ -162,6 +188,80 @@
 }
 
 .foot {
-	background-color: #2D9799;
+	background-color: black;
+    height: 200px;
+    width: 100%;
 	grid-area: foot;
 }
+@media only screen and (max-width: 800px){
+  .head {
+	background-color: #FFC433;
+	grid-area: head;
+	display: grid;
+	grid-template-columns: 500px;
+	justify-self: center;
+}
+  
+  .hero-image {
+	background-color: grey;
+	grid-area: hero-image;
+	position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+  #minion_image {
+	position: absolute;
+	top: 50%;
+  	left: 20%;
+  	transform: translate(-50%, -50%);
+  	padding-left: 40rem;
+    width: 50%;
+}
+  .theme {
+	background-color: #782CB4;
+	grid-area: theme;
+	display: grid;
+/*	grid-template-columns: 1fr;*/
+	grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 500px;
+	grid-template-areas: 
+	"one"
+	"two"
+	"three";
+/*    padding-left: 25%;*/
+    width: 50%;
+    margin-left: 25%;
+}
+  .lately {
+	background-color: #388A3F;
+	grid-area: lately;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 500px;
+	grid-template-areas: 
+	"text"
+	"iconone"
+    "icontwo" 
+    "iconthree";
+    width: 50%;
+    margin-left: 25%;
+}
+.projects {
+	background-color: #D07ADA;
+	grid-area: projects;
+    display: grid;
+    grid-template-rows: 500px;
+/*    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-areas: 
+      "blockone"
+      "blocktwo" 
+      "blockthree"
+      "blockfour" 
+      "blockfive" 
+      "blocksix";
+    width: 50%;
+    margin-left: 25%;
+}
+}
+
