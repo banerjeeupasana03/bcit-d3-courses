@@ -1,16 +1,16 @@
 function Accordion(){
-  var specsBtn = $("#specs_and_price");
+  var specsBtn = document.querySelector("#specs_and_price");
   var accordionState = false;
-  specsBtn.click(function(){
-    var specsTextDiv = $("#specs_price_text");
+  specsBtn.addEventListener("click", function(){
+    var specsTextDiv = document.querySelector("#specs_price_text");
     if(!accordionState){
-      specsTextDiv.html(products[state]["specifications"]);
+      specsTextDiv.innerHTML = products[state]["specifications"];
       accordionState = true;
-      specsBtn.html("Hide Specs and Price");
+      specsBtn.innerHTML = "Hide Specs and Price";
     } else {
-      specsTextDiv.html("");
+      specsTextDiv.innerHTML = "";
       accordionState = false;
-      specsBtn.html("Show Specs and Price");
+      specsBtn.innerHTML = "Show Specs and Price";
     }
   });
 };
