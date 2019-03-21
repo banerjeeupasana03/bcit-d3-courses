@@ -1,13 +1,13 @@
 function ShowMore(){
-  var showMoreBtn = $("#buttons #show_more");
-  showMoreBtn.click(function(){
-    var descriptionDiv = $("#description_container");
+  var showMoreBtn = document.querySelector("#buttons #show_more");
+  showMoreBtn.addEventListener("click", function(){
+    var descriptionDiv = document.querySelector("#description_container");
     var product = products[state];
-    var imgDiv = $("#image_holder");
-    var showSpecsBtn = $("#specs_and_price");
-    descriptionDiv.html(product["description"]);
-    imgDiv.addClass("center");
-    showSpecsBtn.removeClass("hide");
+    var imgDiv = document.querySelector("#image_holder");
+    var showSpecsBtn = document.querySelector("#specs_and_price");
+    descriptionDiv.innerHTML = product["description"];
+    imgDiv.classList.add("center");
+    showSpecsBtn.classList.remove("hide");
     showMoreState = true;
   });
 }
