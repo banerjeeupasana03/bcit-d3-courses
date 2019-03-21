@@ -1,27 +1,27 @@
 function Changemode(){
   document.querySelector("#day_mode_btn").addEventListener("click", function(){
-    var nightClass = $(".night");
+    var nightClass = Array.from(document.getElementsByClassName("night"));
     var x = 0;
     for(x = 0; x < nightClass.length; x++){
-      $(nightClass[x]).addClass("day");
-      $(nightClass[x]).removeClass("night");
+      nightClass[x].classList.add("day");
+      nightClass[x].classList.remove("night");
     }
-    $(".arrow_right_image").addClass("arrow_right_bg_image_day");
-    $(".arrow_right_image").removeClass("arrow_right_bg_image_night");
-    $(".arrow_left_image").addClass("arrow_left_bg_image_day");
-    $(".arrow_left_image").removeClass("arrow_left_bg_image_night");
+    document.querySelector(".arrow_right_image").classList.add("arrow_right_bg_image_day");
+    document.querySelector(".arrow_right_image").classList.remove("arrow_right_bg_image_night");
+    document.querySelector(".arrow_left_image").classList.add("arrow_left_bg_image_day");
+    document.querySelector(".arrow_left_image").classList.remove("arrow_left_bg_image_night");
   });
   
-  $("#night_mode_btn").click(function(){
-    var dayClass = $(".day");
+  document.querySelector("#night_mode_btn").addEventListener("click", function(){
+    var dayClass = Array.from(document.getElementsByClassName("day"));
     var x = 0;
     for(x = 0; x < dayClass.length; x++){
-      $(dayClass[x]).addClass("night");
-      $(dayClass[x]).removeClass("day");
+      dayClass[x].classList.add("night");
+      dayClass[x].classList.remove("day");
     }
-    $(".arrow_right_image").addClass("arrow_right_bg_image_night");
-    $(".arrow_right_image").removeClass("arrow_right_bg_image_day");
-    $(".arrow_left_image").addClass("arrow_left_bg_image_night");
-    $(".arrow_left_image").removeClass("arrow_left_bg_image_day");
+    document.querySelector(".arrow_right_image").classList.add("arrow_right_bg_image_night");
+    document.querySelector(".arrow_right_image").classList.remove("arrow_right_bg_image_day");
+    document.querySelector(".arrow_left_image").classList.add("arrow_left_bg_image_night");
+    document.querySelector(".arrow_left_image").classList.remove("arrow_left_bg_image_day");
   });
 };
