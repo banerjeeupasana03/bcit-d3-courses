@@ -1,7 +1,7 @@
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function() {
   Carousel();
   ShowMore();
   Accordion();
   Zoom();
   Changemode();
-})
+});
