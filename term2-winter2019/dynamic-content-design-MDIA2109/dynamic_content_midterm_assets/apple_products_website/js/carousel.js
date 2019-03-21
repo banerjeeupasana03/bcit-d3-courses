@@ -20,6 +20,8 @@ function Carousel() {
       showSpecsBtn.classList.add("hide");
       specsTextDiv.innerHTML = "";
       showMoreState = false;
+      accordionState = false;
+      showSpecsBtn.innerHTML = "Show Specs and Price";
     }
   });
   
@@ -41,6 +43,8 @@ function Carousel() {
       showSpecsBtn.classList.add("hide");
       specsTextDiv.innerHTML = "";
       showMoreState = false;
+      accordionState = false;
+      showSpecsBtn.innerHTML = "Show Specs and Price";
     }
   });
 }

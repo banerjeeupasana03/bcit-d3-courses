@@ -1,6 +1,5 @@
 function Accordion(){
   var specsBtn = document.querySelector("#specs_and_price");
-  var accordionState = false;
   specsBtn.addEventListener("click", function(){
     var specsTextDiv = document.querySelector("#specs_price_text");
     if(!accordionState){

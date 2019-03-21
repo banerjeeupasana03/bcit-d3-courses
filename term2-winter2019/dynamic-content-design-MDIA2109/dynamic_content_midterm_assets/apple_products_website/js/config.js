@@ -1,6 +1,7 @@
 // state value is the same product list that will be used in multiple functions
 var state = 0;
 var showMoreState = false;
+var accordionState = false;
 var products = [
   {
     name: "Apple Watch",
