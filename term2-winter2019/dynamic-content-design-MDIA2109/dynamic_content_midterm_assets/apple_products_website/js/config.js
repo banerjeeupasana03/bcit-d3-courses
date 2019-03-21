@@ -43,24 +43,24 @@ var products = [
     name: "Apple Home",
     url: "img/apple_home.svg",
     description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
-    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    specifications: "1GB = 1 billion bytes; actual formatted capacity less, Siri Remote is compatible with Apple TV (4th generation or later),Requires HDCP when playing protected content. Supports up to 4K HDR or Dolby Vision TVs, HDMI cable, PRICE: $199"
   },
   {
     name: "Apple Pencil",
     url: "img/apple_pencil.svg",
-    description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
-    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    description: "The new Apple Pencil is designed to be an even more comfortable, natural tool to use. The seamless design — no connectors or moving parts — makes it easy to store. You can even have your Apple Pencil engraved to really make it your own, Apple Pencil set the standard for how drawing, note-taking and marking up documents should feel — intuitive, precise and magical. The new Apple Pencil takes that experience even further. Now you can pair and charge wirelessly and change tools, like a pencil to an eraser, with a simple double-tap.",
+    specifications: "Apple Pencil is packed with technology designed to make using it completely intuitive. With imperceptible lag and pixel-perfect precision, it feels like a familiar writing and drawing tool you’ve always used, Automatic pairing, wireless charging and magnetic storage, Free engraving, PRICE: $169"
   },
   {
-    name: "Mac Pro",
+    name: "Mac Pro 6 Core",
     url: "img/mac_machine.svg",
-    description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
-    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    description: "Mac Pro is a stunning realization of that ideal. All the elements that define a pro computer — graphics, storage, expansion, processing power and memory — have been re-thought and re-engineered. So you have the power and performance to bring your biggest ideas to life.Engineered around workstation graphics with dual GPUs, PCIe-based flash storage, high-performance Thunderbolt 2, Xeon processors, fast memory and support for 4K video, Mac Pro delivers brilliant performance across the board.",
+    specifications: "Mac Pro: 6 core specs- Intel Xeon E5 with 12MB L3 cache and Turbo Boost up to 3.9GHz, Configurable to 3.0GHz 8-core processor with 25MB L3 cache or 2.7GHz 12-core processor with 30MB L3 cache, Configurable to 32GB (four 8GB) or 64GB (four 16GB),Dual AMD FirePro graphics processors,Dual AMD FirePro D500 graphics processors with 3GB of GDDR5 VRAM each,Configurable to 512GB or 1TB2,802.11ac Wi-Fi wireless networking;3 IEEE 802.11a/b/g/n compatible Bluetooth 4.0 wireless technology PRICE: $3499"
   },
   {
-    name: "Apple iPad",
+    name: "Apple iPad Pro",
     url: "img/ipad.svg",
-    description: "Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos.1 It streams your favourite channels live. Has great content from apps like Netflix, CBC TV and Sportsnet.2 And thanks to Siri, you can control it all with just your voice.",
-    specifications: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    description: "With iPad, you get what you need from a computer, along with many incredible things you’d never expect from one. Here are a few reasons why your next computer just might be an iPad.",
+    specifications: "iPad features advanced, Apple-designed chips like the A12X Bionic with Neural Engine in iPad Pro.And it has up to 10 hours of battery life to keep you going all day.1 Stay connected on the go with fast Wi‑Fi or LTE Advanced. iPad runs iOS, 18W USB-C Power Adapter,Fingerprint-resistant oleophobic coating,11-inch (diagonal) LED-backlit Multi‑Touch display with IPS technology,600 nits brightness, Embedded M12 coprocessor,Slo‑mo video support for 1080p at 120 fps and 720p at 240 fps, PRICE: from $999"
   }
 ];
