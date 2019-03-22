@@ -37,7 +37,7 @@ var products = [
     name: "Airpods",
     url: "img/airpods.svg",
     description: "Just take them out and they’re ready to use with all your devices. Put them in your ears and they connect instantly. Speak into them and your voice sounds clear. Introducing AirPods. Simplicity and technology, together like never before. The result is completely magical.",
-    specifications: "Powered by the all-new Apple H1 headphone chip, AirPods deliver a faster and more stable wireless connection to your devices — up to 2x faster when switching between active devices,3 and a 1.5x faster connection time for phone calls.4 The H1 chip also drives voice-enabled Siri access and delivers up to 30 percent lower gaming latency.5 So whether you’re playing games, listening to music or enjoying podcasts, you’ll experience higher-quality sound."
+    specifications: "Powered by the all-new Apple H1 headphone chip, AirPods deliver a faster and more stable wireless connection to your devices — up to 2x faster when switching between active devices,3 and a 1.5x faster connection time for phone calls.4 The H1 chip also drives voice-enabled Siri access and delivers up to 30 percent lower gaming latency.5 So whether you’re playing games, listening to music or enjoying podcasts, you’ll experience higher-quality sound. PRICE: $269"
   },
   {
     name: "Apple Home",
