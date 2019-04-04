@@ -2,9 +2,7 @@ var bg1 = document.getElementById("ch1");
 var bg2 = document.getElementById("ch2");
 var bg3 = document.getElementById("ch3");
 var zoomDiv = document.getElementById("zoom");
-// function changeImage() {
-//   bg1.style.backgroundImage = "url(imgs/i1.jpg)";
-// }
+
  var bg1Button = document.querySelector("#buttons > button:nth-child(2)");
  var bg2Button = document.querySelector("#buttons > button:nth-child(3)");
  var bg3Button = document.querySelector("#buttons > button:nth-child(4)");
@@ -182,3 +180,16 @@ prevBtn.addEventListener("click", function() {
   }
 
 });
+
+
+// This is new
+var allBtns = Array.from(document.getElementsByTagName("button"));
+for(var btnIndex = 0; btnIndex < allBtns.length; btnIndex++) {
+  var text = allBtns[btnIndex].innerHTML;
+  allBtns[btnIndex].innerHTML = '<span class="green">' + text + '</span>';
+}
+//
+// for(var myBtnIndex in allBtns) {
+//   var text = allBtns[myBtnIndex].innerHTML;
+//   console.log(text);
+// }
