@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Apple Products Website
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <script src="js/accordion.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/show_more.js"></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/changemode.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="main" class="night">
+      <div id="change_mode_btns">
+        <button type="button" id="day_mode_btn" class="night"><img src="img/day_mode.svg" alt="day-mode-pic" style="width: 30px; height: 30px"/></button>
+        <button type="button" id="night_mode_btn" class="night"><img src="img/night_mode.svg" alt="night-mode-pic" style="width: 30px; height: 30px" /></button>
+      </div>
+      <div id="main_container">
+        <div class="arrow_left black">
+          <div class="arrow_left_image arrow_left_bg_image_night">
+          </div>
+        </div>
+        <div id="display" class="black">
+          <div id="product_header">
+            <h3>Apple watch</h3>
+          </div>
+          <div id="product_container">
+            <div id="image_holder">
+              <img src="img/apple_watch.svg" alt="apple_watch" class="image_item"/>
+            </div>
+            <div id="description">
+              <div id="description_container">
+              </div>
+              <div id="specs_and_price_container">
+                <button id="specs_and_price" class="hide btn night">Show Specs and Price</button>
+                <div id="specs_price_text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="buttons">
+            <button type="button" id="show_more" class="btn night">Show More</button>
+          </div>
+        </div>
+        <div class="arrow_right black">
+          <div class="arrow_right_image arrow_right_bg_image_night">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
