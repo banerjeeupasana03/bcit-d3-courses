@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px 500px 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  grid-template-areas:
+    "head head head head"
+    "hero-image hero-image hero-image hero-image"
+    ". theme theme ."
+    ". lately lately ."
+    ". projects projects ."
+    ". conclusion conclusion ."
+    "foot foot foot foot";
+}
+
+.head {
+  background-color: #FFC433;
+  grid-area: head;
+  display: grid;
+  grid-template-columns: 500px 100px 100px 100px 100px 100px;
+  justify-self: center;
+}
+
+.metrolics {
+  background-color: white;
+  font-size: 2em;
+  text-align: right;
+  color: grey;
+  padding-right: 10px;
+}
+
+.box1 {
+  background-color: #46E8A8;
+  padding-top: 10px;
+}
+
+.box2 {
+  background-color: #FFB736;
+  padding-top: 10px;
+}
+
+.box3 {
+  background-color: #F8415A;
+  padding-top: 10px;
+}
+
+.box4 {
+  background-color: #37C2EC;
+  padding-top: 10px;
+}
+
+.box5 {
+  background-color: #1472BB;
+  padding-top: 10px;
+}
+
+.hero-image {
+  background-color: grey;
+  grid-area: hero-image;
+  position: relative;
+}
+
+#minion_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 40rem;
+}
+
+.theme {
+  background-color: #782CB4;
+  grid-area: theme;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one one"
+    "two two"
+    "three three";
+}
+
+.one {
+  grid-area: one;
+  background-color: grey;
+  text-align: center;
+  padding: 20px;
+}
+
+.two {
+  grid-area: two;
+  background-color: blue;
+  text-align: center;
+}
+
+.three {
+  grid-area: three;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "picone pictwo picthree picfour";
+}
+
+.picone {
+  grid-area: picone;
+  background-color: white;
+  justify-self: center;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+}
+
+.pictwo {
+  grid-area: pictwo;
+  background-color: grey;
+  justify-self: center;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+}
+
+.picthree {
+  grid-area: picthree;
+  background-color: white;
+  justify-self: center;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+}
+
+.picfour {
+  grid-area: picfour;
+  background-color: grey;
+  justify-self: center;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+}
+
+.lately {
+  background-color: #388A3F;
+  grid-area: lately;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "text text text"
+    "iconone icontwo iconthree"
+}
+
+.text {
+  grid-area: text;
+  justify-self: center;
+}
+
+.iconone {
+  grid-area: iconone;
+  justify-self: center;
+}
+
+.icontwo {
+  grid-area: icontwo;
+  justify-self: center;
+}
+
+.iconthree {
+  grid-area: iconthree;
+  justify-self: center;
+}
+
+.projects {
+  background-color: #D07ADA;
+  grid-area: projects;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "blockone blocktwo blockthree"
+    "blockfour blockfive blocksix";
+  grid-gap: 5px;
+}
+
+.block1 {
+  grid-area: blockone;
+}
+
+.block2 {
+  grid-area: blocktwo;
+}
+
+.block3 {
+  grid-area: blockthree;
+}
+
+.block4 {
+  grid-area: blockfour;
+}
+
+.block5 {
+  grid-area: blockfive;
+}
+
+.block6 {
+  grid-area: blocksix;
+}
+
+
+.conclusion {
+  background-color: #A21054;
+  grid-area: conclusion;
+}
+
+.foot {
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  grid-area: foot;
+}
+
+@media only screen and (max-width: 800px) {
+  .head {
+    background-color: #FFC433;
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 500px;
+    justify-self: center;
+  }
+
+  .hero-image {
+    background-color: grey;
+    grid-area: hero-image;
+    position: relative;
+    width: 50%;
+    left: 25%;
+  }
+
+  #minion_image {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding-left: 40rem;
+    width: 50%;
+  }
+
+  .theme {
+    background-color: #782CB4;
+    grid-area: theme;
+    display: grid;
+    /*	grid-template-columns: 1fr;*/
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 500px;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+    /*    padding-left: 25%;*/
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .lately {
+    background-color: #388A3F;
+    grid-area: lately;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas:
+      "text"
+      "iconone"
+      "icontwo"
+      "iconthree";
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .projects {
+    background-color: #D07ADA;
+    grid-area: projects;
+    display: grid;
+    grid-template-rows: 500px;
+    /*    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-areas:
+      "blockone"
+      "blocktwo"
+      "blockthree"
+      "blockfour"
+      "blockfive"
+      "blocksix";
+    width: 50%;
+    margin-left: 25%;
+  }
+}
