@@ -1,0 +1,23 @@
+#ranges {
+  display: flex;
+}
+
+#buttons {
+  display: flex;
+  width: 30vw;
+}
+
+#buttons input[type='color']{
+  flex: 3;
+}
+
+#display {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
