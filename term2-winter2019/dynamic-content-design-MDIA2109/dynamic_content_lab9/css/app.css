@@ -1,0 +1,24 @@
+#menu {
+  background-color: #ABC;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition:opacity 0.5s, left 0.5s;
+}
+
+#menu a {
+  margin:10px;
+}
+
+#menu a:first-child {
+  margin-top: 50px;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
