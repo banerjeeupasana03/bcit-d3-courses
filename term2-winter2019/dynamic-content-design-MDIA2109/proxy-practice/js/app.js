@@ -7,8 +7,11 @@ var pkg = {
   hair_num: 0,
   eyes_num: 0,
   nose_num: 0,
-  mouth_num: 0
+  mouth_num: 0,
+  random_num: 0
 };
+
+var pauseUIChanges = false;
 
 var hairImgSrc = ["img/hair1.png", "img/hair2.png", "img/hair3.png"];
 var eyesImgSrc = ["img/eyes1.png", "img/eyes2.png", "img/eyes3.png"];
@@ -29,26 +32,40 @@ var prox_handler = {
   set: function (obj, prop, val) {
     obj[prop] = val;
 
-    if (prop == "bgcolor") {
-      ChangeBGUI(obj[prop]);
-    } else if (prop == "hair_dim") {
-      ChangeHairUI(obj[prop]);
-    } else if (prop == "eyes_dim") {
-      ChangeEyesUI(obj[prop]);
-    } else if (prop == "nose_dim") {
-      ChangeNoseUI(obj[prop]);
-    } else if (prop == "mouth_dim") {
-      ChangeMouthUI(obj[prop]);
-    } else if (prop == "hair_num") {
-      SwitchHairUI(obj[prop]);
-    } else if (prop == "eyes_num") {
-      SwitchEyesUI(obj[prop]);
-    } else if (prop == "nose_num") {
-      SwitchNoseUI(obj[prop]);
-    } else if (prop == "mouth_num") {
-      SwitchMouthUI(obj[prop]);
+    if (!pauseUIChanges) {
+      if (prop == "bgcolor") {
+        ChangeBGUI(obj["bgcolor"]);
+      } else if (prop == "hair_dim") {
+        ChangeHairUI(obj["hair_dim"]);
+      } else if (prop == "eyes_dim") {
+        ChangeEyesUI(obj["eyes_dim"]);
+      } else if (prop == "nose_dim") {
+        ChangeNoseUI(obj["nose_dim"]);
+      } else if (prop == "mouth_dim") {
+        ChangeMouthUI(obj["mouth_dim"]);
+      } else if (prop == "hair_num") {
+        SwitchHairUI(obj["hair_num"]);
+      } else if (prop == "eyes_num") {
+        SwitchEyesUI(obj["eyes_num"]);
+      } else if (prop == "nose_num") {
+        SwitchNoseUI(obj["nose_num"]);
+      } else if (prop == "mouth_num") {
+        SwitchMouthUI(obj["mouth_num"]);
+      } else {
+        throw "Dont have any UI interaction for this property"
+      }
     } else {
-      Error("this property is not valid");
+      if (prop == "random_num") {
+        ChangeBGUI(obj["bgcolor"]);
+        ChangeHairUI(obj["hair_dim"]);
+        ChangeEyesUI(obj["eyes_dim"]);
+        ChangeNoseUI(obj["nose_dim"]);
+        ChangeMouthUI(obj["mouth_dim"]);
+        SwitchHairUI(obj["hair_num"]);
+        SwitchEyesUI(obj["eyes_num"]);
+        SwitchNoseUI(obj["nose_num"]);
+        SwitchMouthUI(obj["mouth_num"]);
+      }
     }
   }
 };
@@ -105,10 +122,31 @@ function CreateAva() {
   var newImages = newDiv.querySelectorAll("img");
   var arr = Array.from(newImages);
   var i;
-  for(i = 0; i < arr.length; i++){
+  for (i = 0; i < arr.length; i++) {
     arr[i].removeAttribute("onclick");
   }
 };
+
+function RandomAva() {
+  // Pausing UI changes
+  pauseUIChanges = true;
+
+  prox["hair_dim"] = GetRandomNumber(70);
+  prox["nose_dim"] = GetRandomNumber(30);
+  prox["mouth_dim"] = GetRandomNumber(35);
+  prox["eyes_dim"] = GetRandomNumber(40);
+  // Couldnt figure out how to get a random background color
+  // prox["bgcolor"] = 60;
+  prox["hair_num"] = GetRandomNumber(hairImgSrc.length - 1);
+  prox["eyes_num"] = GetRandomNumber(eyesImgSrc.length - 1);
+  prox["nose_num"] = GetRandomNumber(noseImgSrc.length - 1);
+  prox["mouth_num"] = GetRandomNumber(mouthImgSrc.length - 1);
+  prox["random_num"] = GetRandomNumber(1000000);
+
+  // Unpause UI changes
+  pauseUIChanges = false;
+};
+
 ///////////FUNCTIONS THAT CHANGES UI///////////////////
 
 function ChangeBGUI(val) {
@@ -159,3 +197,9 @@ function SwitchMouthUI(val) {
   var position = val % mouthImgSrc.length;
   mouthImage.src = mouthImgSrc[position];
 };
+
+///////////HELPER FUNCTIONS///////////////////
+
+function GetRandomNumber(maxNum) {
+  return Math.floor(Math.random() * Math.floor(maxNum));
+}
