@@ -1,0 +1,58 @@
+body {
+  background-color: floralwhite;
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  background-color: darkcyan;
+  height: 30vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-input-container label {
+  float: left;
+}
+
+.flex-input-container input {
+  float: right;
+}
+
+#submit_btn input[type='submit'] {
+  background-color: aqua;
+}
+
+#submit_btn input[type='reset'] {
+  background-color: hotpink;
+}
+
+#result {
+  background-color: burlywood;
+}
+
+#resulttwo {
+  background-color: skyblue;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: darkgreen;
+}
