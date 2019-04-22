@@ -1,5 +1,5 @@
 body {
-  background-color: floralwhite;
+  background-color: antiquewhite;
   height: 100%;
   width: 100%;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 form {
-  background-color: darkcyan;
+  background-color: #DAD;
   height: 30vh;
   width: 40vw;
   display: flex;
