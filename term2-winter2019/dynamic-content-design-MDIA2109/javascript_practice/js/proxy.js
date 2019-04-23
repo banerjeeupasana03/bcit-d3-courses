@@ -1,35 +1,28 @@
-function ProxyfunctionalityContainer() {
-  var obj = {
-    name: "suman",
-    hobby: "coding",
+function ProxyLearningContainer() {
+  var object = {
+    name: "Khepu",
+    occupation: "software",
+    food: "lentil",
     color: "blue"
-  }
+  };
+
   var handler = {
     get: function (obj, prop) {
-      var caps = "";
-      var small = "";
-      var result = "";
       obj[prop];
-      for (var i = 0; i < obj[prop].length; i++) {
-        if (i % 2 == 0) {
-          caps = obj[prop].charAt(i).toUpperCase();
-        } else {
-          small = obj[prop].charAt(i).toLowerCase();
-        }
-        result = result + (caps + small);
-        caps = "";
-        small = "";
-      }
-      return result;
+      if()
+      obj["nothing"] = "non-existant";
+      return obj["nothing"];
     },
 
-    set: function (obj, prop, val) {
-      obj[prop] = val;
+    set: function (obj, prop, value) {
+      obj[prop] = value;
     }
   };
 
-  var prox = new Proxy(obj, handler);
+  var prox = new Proxy(object, handler);
 
-  var result_1 = prox.name;
-  console.log(result_1);
+  var output = prox.nothing;
+  //  prox.hobby = "football";
+  //  var add = prox.hobby;
+  console.log(output);
 }

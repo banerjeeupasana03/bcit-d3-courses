@@ -4,7 +4,7 @@ function App() {
   var handlerValue = PersonsAndProfessions();
   handlerValue.professionsForPersons(persons_1, professions_1);
   handlerValue.personsForProfessions(persons_2, professions_2);
-  ProxyfunctionalityContainer();
+  ProxyLearningContainer();
 };
 
 
