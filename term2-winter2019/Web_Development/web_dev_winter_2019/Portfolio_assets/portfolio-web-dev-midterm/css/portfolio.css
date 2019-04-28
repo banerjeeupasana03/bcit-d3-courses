@@ -1,7 +1,7 @@
  /*the styling of the header of the homepage*/
 
  body {
-    width: 100%;
+   width: 100%;
    height: 100%;
    position: relative;
    background-color: antiquewhite;
@@ -110,9 +110,9 @@
    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
  }
 
-#portfolio {
-  color: goldenrod;
-}
+ #portfolio {
+   color: goldenrod;
+ }
 
  #portfolio-icon {
    margin-top: 33%;
@@ -127,4 +127,49 @@
    font-family: 'Bitter', serif;
    line-height: 26pt;
    z-index: 5;
+ }
+
+ /* the portfolio page CSS starts from here */
+
+ #main-container {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   width: 80vw;
+   height: 70vh;
+   /*   background-color: aqua;*/
+   justify-content: center;
+   align-items: center;
+ }
+
+ #design {
+   background-image: url(../img/art-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-bottom: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+   background-position: 30% 50%;
+ }
+
+ #coding {
+   background-image: url(../img/programmer-bg.svg);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: cover;
+   color: black;
+   background-color: ghostwhite;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .design_and_coding_div_style {
+   background-color: aquamarine;
+   height: 20vh;
+   width: 80vw;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Bitter', serif;
+   font-size: 16pt;
  }

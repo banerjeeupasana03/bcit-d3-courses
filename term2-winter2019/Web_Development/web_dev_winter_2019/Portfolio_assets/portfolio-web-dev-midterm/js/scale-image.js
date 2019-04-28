@@ -5,5 +5,5 @@ function ScaleImage() {
   });
   myImage.addEventListener("mouseout", function () {
     myImage.style.transform = "scale(1,1)";
-  })
+  });
 }
